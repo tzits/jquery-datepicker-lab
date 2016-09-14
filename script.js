@@ -12,9 +12,9 @@ function daysLeft() {
 	var a = $( "#datepicker" ).datepicker('getDate').getTime();
 	// solutions for 9, 10, 11 and 12 go here:
 
-	// var b = _____
-	// var c = _____
-	// var d = _____
+	// var b = today.getTime()
+	// var c = (b - a) * 24 * 60 * 60 * 100
+	// var d = Math.trunc(c)	 
 
 	// we will remove this later:
 	return a;
@@ -46,5 +46,4 @@ $("#datepicker").on("change", function(a){
 // Here is a link to the Math object:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 // I bet you can figure out which method to call on your difference in days variable.
 // It's one of the ones listed under Methods in the left column of the page linked above.
-
 
